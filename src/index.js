@@ -7,7 +7,6 @@
 // import FavoritesPage from './pages/FavoritesPage';
 // import LandingPage from './pages/LandingPage';
 
-
 // const App = () => {
 //   const [stations, setStations] = useState([]);
 //   const [currentStation, setCurrentStation] = useState(null);
@@ -42,7 +41,7 @@
 
 //   const fetchStations = async () => {
 //     try {
-//       const response = await fetch('https://de1.api.radio-browser.info/json/stations/topclick/50');
+//       const response = await fetch('https://de1.api.radio-browser.info/json/stations/topclick/24'); // Changed to fetch only 24 stations
 //       const data = await response.json();
 //       const formattedData = data.map((station, index) => ({
 //         id: index + 1,
@@ -133,7 +132,6 @@
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<App />);
-
 
 
 
@@ -234,6 +232,10 @@ const App = () => {
     }
   };
 
+  const togglePlayPause = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <Router>
       <Routes>
@@ -246,8 +248,8 @@ const App = () => {
               setCurrentStation={handleCurrentStationChange}
               currentStation={currentStation}
               toggleFavorite={toggleFavorite}
-              currentSongMetadata={currentSongMetadata}
               isPlaying={isPlaying}
+              togglePlayPause={togglePlayPause}
             />
           }
         />
@@ -259,8 +261,8 @@ const App = () => {
               setCurrentStation={handleCurrentStationChange}
               currentStation={currentStation}
               toggleFavorite={toggleFavorite}
-              currentSongMetadata={currentSongMetadata}
               isPlaying={isPlaying}
+              togglePlayPause={togglePlayPause}
             />
           }
         />
