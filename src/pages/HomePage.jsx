@@ -1,9 +1,23 @@
-// import React from 'react';
+// import React, { useState, useEffect } from 'react';
 // import Header from '../components/Header';
 // import Footer from '../components/Footer';
 // import StationList from '../components/StationList';
 
-// const HomePage = ({ stations, setCurrentStation, currentStation, toggleFavorite, currentSongMetadata, isPlaying, togglePlayPause }) => {
+// const HomePage = ({ stations, setCurrentStation, currentStation, toggleFavorite, isPlaying, togglePlayPause }) => {
+//   const [currentSongMetadata, setCurrentSongMetadata] = useState({
+//     artist: currentStation?.artist || '',
+//     songTitle: currentStation?.songTitle || '',
+//   });
+
+//   useEffect(() => {
+//     if (currentStation) {
+//       setCurrentSongMetadata({
+//         artist: currentStation.artist,
+//         songTitle: currentStation.songTitle,
+//       });
+//     }
+//   }, [currentStation]);
+
 //   return (
 //     <div className="homepage-container">
 //       <Header />
@@ -66,6 +80,7 @@ const HomePage = ({ stations, setCurrentStation, currentStation, toggleFavorite,
     artist: currentStation?.artist || '',
     songTitle: currentStation?.songTitle || '',
   });
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     if (currentStation) {
@@ -76,20 +91,33 @@ const HomePage = ({ stations, setCurrentStation, currentStation, toggleFavorite,
     }
   }, [currentStation]);
 
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const filteredStations = stations.filter(station =>
+    station.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="homepage-container">
       <Header />
       <div className="content-container">
         <div className="left-column">
           <div className="search-bar">
-            <input type="text" placeholder="Search..." />
+            <input 
+              type="text" 
+              placeholder="Search..." 
+              value={searchQuery} 
+              onChange={handleSearchChange} 
+            />
             <span className="search-icon">🔍</span>
           </div>
           {stations.length === 0 ? (
             <p>Loading stations...</p>
           ) : (
             <StationList 
-              stations={stations} 
+              stations={filteredStations} 
               setCurrentStation={setCurrentStation} 
               currentStation={currentStation} 
               toggleFavorite={toggleFavorite} 
