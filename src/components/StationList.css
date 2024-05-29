@@ -1,0 +1,38 @@
+.station-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-height: 570px; /* Adjust as needed */
+    overflow-y: auto;
+  }
+  
+  .station-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .station-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .station-info {
+    margin-top: 10px;
+  }
+  
+  .station-controls button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .station-controls button:hover {
+    color: #8a1e1e;
+  }
+  
