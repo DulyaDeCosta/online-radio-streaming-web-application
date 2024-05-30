@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +67,53 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+
+
+# Radio Station Player
+
+This project is a web application for listening to live music radio stations. It allows users to browse stations, play/pause stations, and mark their favorite stations.
+
+## Setup
+
+### Prerequisites
+
+Make sure you have Node.js and npm (Node Package Manager) installed on your machine. You can download and install them from [here](https://nodejs.org/).
+
+### Installation
+
+        1. Clone the repository to your local machine:
+
+            git clone <repository-url>
+
+        2. Navigate to the project directory:
+
+            cd radio-station-player
+
+        3. Install dependencies:
+
+            npm install
+
+## Running the Application
+
+        1. Start the development server:
+
+            npm start
+
+
+        2. Open your web browser and go to `http://localhost:3000` to view the application.
+
+            ## Usage
+
+                - Home Page: The home page displays a list of available radio stations. Click on the play button to start listening to a station. You can also search for stations using the search bar.
+
+                - Favorites Page: Navigate to the favorites page by clicking on the "Favorites" link in the header. This page displays a list of your favorite stations. Click on the star icon to toggle a station's favorite status.
+
+            ## Technologies Used
+
+                - React: JavaScript library for building user interfaces.
+                - React Router: Library for routing in React applications.
+                - FontAwesome: Library for adding icons to web applications.
+                - CSS: Styling the components.
+                - Node.js: JavaScript runtime environment.
+                - npm: Package manager for Node.js.
