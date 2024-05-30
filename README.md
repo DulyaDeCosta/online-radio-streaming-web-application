@@ -18,7 +18,7 @@ Welcome to the Radio Station Player, a web application designed for listening to
     Node.js: Download and install Node.js
     npm: Comes with Node.js, but can be updated separately if needed.
     
-    ### Installation
+    **Installation**
 
         1. Clone the repository to your local machine:
 
@@ -33,7 +33,7 @@ Welcome to the Radio Station Player, a web application designed for listening to
             npm install
 
 
-    ## Running the Application
+    **Running the Application**
 
         1. Start the development server:
 
@@ -41,13 +41,13 @@ Welcome to the Radio Station Player, a web application designed for listening to
 
         2. Open your web browser and go to `http://localhost:3000` to view the application.
 
-    ## Usage
+    **Usage**
 
         - Home Page : The home page displays a list of available radio stations. Click on the play button to start listening to a station. You can also search for stations using the search bar.
 
         - Favorites Page : Navigate to the favorites page by clicking on the "Favorites" link in the header. This page displays a list of your favorite stations. Click on the star icon to toggle a station's favorite status.
 
-    ## Technologies Used
+    **Technologies Used**
 
         - React: JavaScript library for building user interfaces.
         - React Router: Library for routing in React applications.
