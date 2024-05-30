@@ -3,12 +3,14 @@
  
 
 Welcome to the Radio Station Player, a web application designed for listening to live music radio stations. With this app, you can browse through various stations, play and pause them, and even mark your favorites!
+<img width="1470" alt="Screenshot 2024-05-30 at 23 03 42" src="https://github.com/DulyaDeCosta/online-radio-streaming-web-application/assets/148673241/cf287181-6058-4592-a5b1-43a22e3bf590">
 
 🌟 Features
     🎧 Browse Stations: Explore a wide range of radio stations from different genres.
     ⏯️ Play/Pause: Control the playback of your favorite stations with ease.
     ❤️ Favorite Stations: Mark stations as favorites for quick access.
 
+<img width="1470" alt="Screenshot 2024-05-30 at 23 04 12" src="https://github.com/DulyaDeCosta/online-radio-streaming-web-application/assets/148673241/77d86534-f379-461d-b65a-d87d7e1de5b3">
 
 🚀 Setup
     Prerequisites
