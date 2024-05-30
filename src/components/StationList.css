@@ -1,38 +1,133 @@
+/* Station list styles */
 .station-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-height: 570px; /* Adjust as needed */
-    overflow-y: auto;
-  }
-  
-  .station-box {
-    display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-height: 570px; /* Adjust as needed */
+  overflow-y: auto;
+}
+
+.station-box {
+  display: flex;
+  background-color: #afb4b9;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #0d0d0d;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow:0 5px 8px #0d0d0d; /* Add shadow here */
+ 
+}
+
+.station-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.station-info {
+  margin-top: 10px;
+}
+
+.station-controls {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.station-controls button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.station-controls button:hover {
+  color: #284995;
+}
+
+
+/* Current station styles */
+.current-station {
+  border: 2px solid #0d0d0d;
+  background-color: #afb4b9;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow:0 5px 8px #0d0d0d; 
+  align-items: center;
+  justify-content: center; 
+  height: 620px;
+
+}
+
+.current-station .station-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.current-station .station-logo img {
+  padding: 60px 60px 60px 60px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.current-station .station-info h2 {
+  margin: 10px 0;
+}
+
+.current-station .station-controls {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .content-container {
     flex-direction: column;
-    align-items: center;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
   }
-  
+  .left-column, .right-column {
+    flex: none;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
   .station-logo img {
+    width: 60px;
+    height: 60px;
+  }
+  .current-station .station-logo img {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
   }
-  
-  .station-info {
-    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .content-container {
+    padding: 10px;
   }
-  
-  .station-controls button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 18px;
+  .search-bar input {
+    padding: 8px;
   }
-  
-  .station-controls button:hover {
-    color: #8a1e1e;
+  .station-box {
+    padding: 5px;
   }
-  
+  .station-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .current-station .station-logo img {
+    width: 60px;
+    height: 60px;
+  }
+}
