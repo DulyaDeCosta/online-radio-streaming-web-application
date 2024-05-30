@@ -13,9 +13,9 @@
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background-size: cover; /* Ensure the image covers the container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
   padding: 20px;
   box-sizing: border-box;
   padding-top: 60px;

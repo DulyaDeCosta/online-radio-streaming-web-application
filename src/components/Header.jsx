@@ -6,7 +6,7 @@ const Header = () => {
     <header className="bg-gray-800 text-white py-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="logo">
-          <h1 className="text-2xl font-bold">Audio Heaven</h1>
+          <h1 className="text-2xl font-bold" style={{ fontFamily: "'Lobster', cursive" }}>Audio Heaven</h1>
         </div>
         <nav>
           <ul className="flex space-x-4">

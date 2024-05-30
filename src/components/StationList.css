@@ -45,8 +45,9 @@
 }
 
 .station-controls button:hover {
-  color: #8a1e1e;
+  color: #284995;
 }
+
 
 /* Current station styles */
 .current-station {
@@ -56,7 +57,7 @@
   padding: 10px;
   text-align: center;
   box-shadow:0 5px 8px #0d0d0d; 
-  align-items: center; /* Center children horizontally */
+  align-items: center;
   justify-content: center; 
   height: 620px;
 

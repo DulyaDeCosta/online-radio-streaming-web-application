@@ -43,11 +43,11 @@ body {
   border: 1px solid #0b0a0a;
   border-radius: 4px;
   background-color: #afb4b9;
-  color: #000; /* Ensures input text is black */
+  color: #000;
 }
 
 .search-bar input::placeholder {
-  color: #000; /* Sets placeholder text color to black */
+  color: #000; 
 }
 
 .search-icon {
