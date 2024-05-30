@@ -1,11 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/landingPage.css';
-
+// LandingPage with background image, heading, tagline, button to radio stations.
 const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
+    // Container for the landing page with background image
     <div 
       className="landing-container"
       style={{ backgroundImage: 'url(/bg-image.svg)' }}
@@ -18,5 +19,5 @@ const LandingPage = () => {
     </div>
   );
 };
-
+// Export the LandingPage component as the default export
 export default LandingPage;

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import StationList from '../components/StationList';
-
+// HomePage component represents the home page of the application
 const HomePage = ({ stations, setCurrentStation, currentStation, toggleFavorite, isPlaying, togglePlayPause }) => {
+  // State for current song metadata and search query
   const [currentSongMetadata, setCurrentSongMetadata] = useState({
     artist: currentStation?.artist || '',
     songTitle: currentStation?.songTitle || '',
@@ -17,17 +18,18 @@ const HomePage = ({ stations, setCurrentStation, currentStation, toggleFavorite,
         songTitle: currentStation.songTitle,
       });
     }
-  }, [currentStation]);
-
+  }, [currentStation]);// Dependency array ensures this effect runs when currentStation changes
+  // Handler for updating search query state
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
-
+  // Filter stations based on search query
   const filteredStations = stations.filter(station =>
     station.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
+    // Main container for the home page
     <div className="homepage-container">
       <Header />
       <div className="content-container">
@@ -80,5 +82,5 @@ const HomePage = ({ stations, setCurrentStation, currentStation, toggleFavorite,
     </div>
   );
 };
-
+// Export the HomePage component as the default export
 export default HomePage;
