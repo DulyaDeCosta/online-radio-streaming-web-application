@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color:  #61677A;
 }
 
 .homepage-container {
@@ -39,8 +40,14 @@ body {
 .search-bar input {
   flex-grow: 1;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #0b0a0a;
   border-radius: 4px;
+  background-color: #afb4b9;
+  color: #000; /* Ensures input text is black */
+}
+
+.search-bar input::placeholder {
+  color: #000; /* Sets placeholder text color to black */
 }
 
 .search-icon {
