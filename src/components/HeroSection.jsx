@@ -1,8 +1,9 @@
 import React from 'react';
 import StationList from './StationList';
-
+// HeroSection component represents the hero section of the webpage, displaying a list of stations and current song information
 const HeroSection = ({ stations, setCurrentStation, currentStation, toggleFavorite }) => {
   return (
+    // Section container stations
     <section className="bg-gray-900 text-white py-8">
       <div className="container mx-auto">
         <div className="station-selector">
@@ -21,5 +22,5 @@ const HeroSection = ({ stations, setCurrentStation, currentStation, toggleFavori
     </section>
   );
 };
-
+// Export the HeroSection component as the default export
 export default HeroSection;

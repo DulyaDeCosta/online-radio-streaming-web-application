@@ -1,8 +1,9 @@
 import React from 'react';
 import { FaHome, FaHeart, FaUser, FaSignInAlt } from 'react-icons/fa';
 
-const Header = () => {
+const Header = () => {// Header component renders the header section of the webpage
   return (
+    // Header container with content
     <header className="bg-gray-800 text-white py-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="logo">
@@ -34,5 +35,5 @@ const Header = () => {
     </header>
   );
 };
-
+// Export the Header component as the default export
 export default Header;

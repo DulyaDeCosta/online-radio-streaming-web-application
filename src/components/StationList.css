@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
-  max-height: 570px; /* Adjust as needed */
+  max-height: 570px; 
   overflow-y: auto;
 }
 
@@ -16,7 +16,7 @@
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  box-shadow:0 5px 8px #0d0d0d; /* Add shadow here */
+  box-shadow:0 5px 8px #0d0d0d;
  
 }
 
